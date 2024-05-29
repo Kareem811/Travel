@@ -1,0 +1,32 @@
+.table {
+  margin: 100px 0;
+  width: 100%;
+  text-align: center;
+}
+.table tr td,
+.table tr th {
+  padding: 10px;
+}
+.table thead tr {
+  background-color: #000;
+  color: #fff;
+  font-weight: 900;
+}
+table tbody tr:nth-child(even) {
+  background-color: #ffbb93;
+}
+table tbody tr td button {
+  padding: 8px 30px;
+  cursor: pointer;
+  background-color: #f4762d;
+  outline: none;
+  color: #fff;
+  border: none;
+  transition: 0.5s;
+  border-radius: 3px;
+}
+
+table tbody tr td button:hover {
+  background-color: #fff;
+  color: #f4762d;
+}

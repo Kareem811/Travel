@@ -1,0 +1,77 @@
+.backgroundContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(../../../Images/pyramid2.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+.backgroundContainer  .backgroundLayer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ffd68a4c, #f4762da0);
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: column;
+}
+.backgroundContainer .backgroundData {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  color: #fff;
+  padding: 20px;
+}
+.backgroundContainer .backgroundData h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+}
+.backgroundContainer .backgroundData p {
+  max-width: 800px;
+}
+.backgroundContainer .backgroundData .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.backgroundContainer .backgroundData .buttons a {
+  padding: 12px 60px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+  border-radius: 10px;
+  color: #fff !important;
+  transition: 0.5s;
+}
+.backgroundContainer .backgroundData .buttons a:hover {
+  background-color: #f4762d;
+  border: 1px solid #f4762d;
+}
+@media screen and (max-width: 650px) {
+  .backgroundContainer .backgroundData h1 {
+    font-size: 45px;
+  }
+}
+/* .backgroundContainer .backgroundData .buttons a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: orangered;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+.backgroundContainer .backgroundData .buttons a:hover::before {
+  width: 100%;
+} */

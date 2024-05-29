@@ -1,0 +1,93 @@
+.servicesContainer {
+  width: 100%;
+  padding: 150px 0;
+  background: url("../../../Images/mosque.jpg") top/cover fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px auto;
+  gap: 50px;
+  position: relative;
+}
+.servicesContainer::before
+{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #7b68444c, #64311346);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.servicesContainer h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: #fff;
+  z-index: 1;
+}
+.servicesContainer .services {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.servicesContainer .services .serviceBox {
+  width: 320px;
+  position: relative;
+  background-color: #fff;
+  padding: 100px 40px 60px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.servicesContainer .services .serviceBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(252, 139, 97);
+  background-color: #f4762d;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+.servicesContainer .services .serviceBox:hover::before {
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+.servicesContainer .services .serviceBox h2 {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: #f4762d;
+  font-weight: 800;
+  font-size: 4em;
+  opacity: 0.2;
+  transition: 0.5s;
+}
+.servicesContainer .services .serviceBox:hover h2 {
+  opacity: 1;
+  transform: translateY(-30px);
+  color: #fff;
+}
+.servicesContainer .services .serviceBox h3 {
+  position: relative;
+  font-size: 1.5em;
+  z-index: 2;
+  color: #333;
+  transition: 0.5s;
+}
+.servicesContainer .services .serviceBox p {
+  position: relative;
+  z-index: 2;
+  color: #555;
+  transition: 0.5s;
+}
+.servicesContainer .services .serviceBox:hover h3,
+.servicesContainer .services .serviceBox:hover p {
+  color: #fff;
+}

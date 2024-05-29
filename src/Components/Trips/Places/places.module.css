@@ -1,0 +1,135 @@
+/* .placesContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.placesContainer .places {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.placesContainer .places img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.placesContainer .places .placesData {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #ffd68a93, #773a177f);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.placesContainer .places .placesData h1 {
+  font-size: 70px;
+  font-weight: 900;
+  color: #fff;
+}
+.placesContainer .places .placesData a {
+  padding: 10px 60px;
+  color: #fff;
+  border: 1px solid #f4762d;
+  transition: 0.5s;
+  background-color: #f4762d;
+  font-size: 20px;
+}
+.placesContainer .places .placesData a:hover {
+  transform: translateX(5px);
+  color: #fff;
+  border-color: #fff;
+  background-color: transparent;
+} */
+
+.placesContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 80px 0;
+}
+.placesContainer h1 
+{
+  font-weight: 900;
+  font-size: 40px;
+}
+.placesContainer .places {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.placesContainer .places .place {
+  width: 600px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+.placesContainer .places .place img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.placesContainer .places .place:hover img 
+{
+  transform: scale(1.2);
+}
+.placesContainer .places .place:hover .placeData 
+{
+  opacity: 1;
+}
+.placesContainer .places .placeData {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #ffd68a93, #773a177f);
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  opacity: 0;
+}
+.placesContainer .places .placeData h3 {
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+}
+.placesContainer .places .placeData a {
+  padding: 10px 60px;
+  color: #fff;
+  border: 1px solid #f4762d;
+  transition: 0.5s;
+  background-color: #f4762d;
+  font-size: 20px;
+}
+.placesContainer .places .placeData a:hover {
+  transform: translateX(5px);
+  color: #fff;
+  border-color: #fff;
+  background-color: transparent;
+}
